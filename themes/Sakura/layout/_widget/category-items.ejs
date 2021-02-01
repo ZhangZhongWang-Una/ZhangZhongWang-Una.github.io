@@ -1,0 +1,46 @@
+<article class="post post-list" itemscope="" itemtype="https://schema.org/BlogPosting">
+    <div class="post-entry">
+        <div class="feature">
+            <a href="<%- url_for(post.path) %>">
+                <div class="overlay">
+                    <i class="iconfont icon-text">
+          </i>
+                </div>
+                <!-- <img data-lazy-src="/images/loader/orange.progress-bar-stripe-loader.svg" alt="" onerror="this.onerror=null,
+        this.src=&quot;/images/404.jpg&quot;" data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>"> -->
+                <!-- <img data-lazy-src="/images/loader/orange.progress-bar-stripe-loader.svg" alt="<%= post.title %>" onerror="this.onerror=null,
+                                                        this.src=&quot;/img/404.jpg&quot;" data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>">-->
+
+                <img width="150" height="150" src="<%= post.photos[0] %>" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="">
+            </a>
+        </div>
+        <h1 class="entry-title">
+            <a href="<%- url_for(post.path) %>">
+                <%= post.title %>
+            </a>
+        </h1>
+        <div class="p-time">
+            <i class="iconfont icon-time">
+      </i>
+            <%= date(post.date, 'YYYY-M-D') %>
+        </div>
+        <p>
+            <% if (post.description && post.description.length > 0) { %>
+                <%- post.description %>
+                    <% } else { %>
+                        <% if (theme.post_description.enable) { %>
+                            <%- strip_html(post.content).substring(0, 50) %>
+                                <% } %>
+                                    <% } %>
+        </p>
+        <footer class="entry-footer">
+            <div class="post-more">
+                <a href="<%- url_for(post.path) %>">
+                    <i class="iconfont icon-caidan">
+          </i>
+                </a>
+            </div>
+        </footer>
+    </div>
+    <hr>
+</article>

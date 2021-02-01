@@ -1,0 +1,34 @@
+    <div class="pattern-center-blank">
+    </div>
+    <div class="pattern-center ">
+        <div class="pattern-attachment-img">
+            <img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200303155335.webp" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        </div>
+        <header class="pattern-header ">
+            <h1 class="entry-title">
+                作者 |
+                <%= page.type %>
+            </h1>
+            <span class="cat-des">
+              <i class="fa fa-venus-double" aria-hidden="true" style="color: lightcoral;"></i>
+            <p><%= page.description %></p>
+            </span>
+        </header>
+    </div>
+
+
+    <div id="content" class="site-content">
+        <div id="primary" class="content-area kuangjia">
+            <main id="main" class="site-main" role="main">
+                <% site.posts.sort('date', theme.homePageSortType).limit(theme.homeArticleShown).each(function(post, index){ %>
+                    <% if( post.author == page.type) { %>
+                    <%- partial('_widget/category-items', {index: index, post: post}) %>
+                  <% }}) %>
+                    <div class="clearer">
+                    </div>
+            </main>
+            <% if (page.total > 1 && page.next_link){ %>
+                <div id="pagination"><a href="<%- url_for(page.next_link) %>" class="">Previous</a></div>
+                <% } %>
+        </div>
+    </div>

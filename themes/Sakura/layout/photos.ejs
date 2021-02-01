@@ -1,0 +1,407 @@
+<link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">  
+<!-- fancybox大图查看 需jq -->
+<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
+
+<link href="/css/photos.css" rel="stylesheet">
+<div class="pattern-center-blank">
+</div>
+<div class="pattern-center ">
+    <div class="pattern-attachment-img">
+        <img src="<%= page.photos%>" data-src="<%= page.photos%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    </div>
+    <header class="pattern-header ">
+        <h1 class="entry-title">
+            相册 | photo
+        </h1>
+        <span class="cat-des">
+          <i class="fa fa-venus-double" aria-hidden="true" style="color: lightcoral;"></i>
+        <p><%= page.description%></p>
+        </span>
+    </header>
+</div>
+
+<div id="picwall">
+    <main class="layout_page hide-aside" id="content-inner"><div id="page"><div id="article-container">
+        <link href="http://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Wire+One" rel="stylesheet" type="text/css">
+        <hr></hr>
+        <div class="content">
+            <div class="iw_wrapper">
+                <ul class="iw_thumbs" id="iw_thumbs">
+                    <li><a href="<%- (theme.oss) + 'picwall/picwall_0.jpeg' %>"  data-fancybox="picwall" class="fancybox">
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)"
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_0.jpeg' %>" alt=""></a>
+                    </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_1.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_1.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_11.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_11.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_12.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_12.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_13.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_13.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_14.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_14.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_15.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_15.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_16.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_16.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_17.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_17.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_18.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_18.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_19.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_19.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_2.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_2.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_20.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_20.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_21.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_21.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_22.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_22.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_23.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_23.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_24.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_24.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_25.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_25.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_26.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_26.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_27.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_27.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_28.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_28.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_29.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_29.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_3.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_3.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_30.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_30.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_31.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_31.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_32.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_32.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_33.png' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_33.png' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_34.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_34.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_35.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_35.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_36.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_36.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_37.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_37.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_38.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_38.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_39.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_39.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_4.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_4.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_40.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_40.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_41.png' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_41.png' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_42.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_42.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_43.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_43.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_44.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_44.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_45.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_45.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_46.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_46.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_47.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_47.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_48.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_48.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_49.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_49.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_5.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_5.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_50.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_50.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_51.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_51.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_52.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_52.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_53.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_53.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_54.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_54.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_55.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_55.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_57.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_57.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_58.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_58.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_59.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_59.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_6.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_6.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_60.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_60.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_61.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_61.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_62.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_62.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_63.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_63.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_64.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_64.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_65.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_65.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_66.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_66.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_67.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_67.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_7.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_7.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_71.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_71.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_72.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_72.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_74.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_74.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_75.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_75.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_76.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_76.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_77.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_77.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_78.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_78.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_79.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_79.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_8.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_8.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_80.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_80.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_81.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_81.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_82.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_82.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_83.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_83.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_84.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_84.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_85.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_85.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_86.jpeg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_86.jpeg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_87.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_87.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_88.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_88.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_89.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_89.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_9.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_9.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_90.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_90.jpg' %>" alt=""></a>
+                       </li>
+                       <li><a href="<%- (theme.oss) + 'picwall/picwall_91.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
+                        <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
+                        data-src="<%- (theme.oss) + 'picwall_min/picwall_91.jpg' %>" alt=""></a>
+                       </li>
+                       
+
+
+                </ul>
+            </div>
+            <div id="iw_ribbon" class="iw_ribbon">
+                <span class="iw_close"></span>
+                <span class="iw_zoom">Click thumb to zoom</span>
+            </div>
+        </div>
+        </div></div></div></main>
+</div>
+<script>
+  $('[data-fancybox="picwall"]').fancybox({
+    protect: true,
+    thumbs: {
+    autoStart: false, // Display thumbnails on opening
+    hideOnClose: true, // Hide thumbnail grid when closing animation starts
+    parentEl: ".fancybox-container", // Container is injected into this element
+    axis: "y" // Vertical (y) or horizontal (x) scrolling
+  },
+    afterLoad : function(instance, current) {
+        var pixelRatio = window.devicePixelRatio || 1;
+
+        if ( pixelRatio > 1.5 ) {
+            current.width  = current.width  / pixelRatio;
+            current.height = current.height / pixelRatio;
+        }
+    }
+  });
+</script>
+

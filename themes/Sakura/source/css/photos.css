@@ -1,0 +1,297 @@
+#picwall {
+    background: #fff top left !important;
+}
+#page{
+	background:#f7f7f7 url(/images/pinstripe.gif) repeat top left !important;
+	color:#000;
+	font-family: Georgia, "Times New Roman",sans-serif;
+	font-size:12px;
+	width: 100% !important;
+}
+#page,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td { 
+	margin:0;
+	padding:0;
+}
+#page,body {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset,img { 
+	border:0;
+}
+input{
+	border:1px solid #b0b0b0;
+	padding:3px 5px 4px;
+	color:#979797;
+	width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+	font-style:normal;
+	font-weight:normal;
+}
+ol,ul {
+	list-style:none;
+}
+caption,th {
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+q:before,q:after {
+	content:'';
+}
+abbr,acronym { border:0;
+}
+/* .hide-aside {
+    max-width: 2000px;
+} */
+.iw_wrapper{
+	width: 90% !important;
+	margin:0px auto 10px auto;
+	position:relative;
+}
+ul.iw_thumbs li{
+	float:left;
+	margin:5px;
+	list-style-type: none;
+}
+ul.iw_thumbs li div{
+	position:absolute;
+	top:5px;
+	width:180px;
+	padding:0px 10px;
+	display:none;
+	color:#fff;
+	z-index:100;
+}
+ul.iw_thumbs li div h2{
+	font-family: 'Wire One', arial, serif;
+	font-size:38px;
+	text-transform:uppercase;
+	text-shadow:0px 0px 1px #fff;
+}
+ul.iw_thumbs li div p{
+	font-size:11px;
+	line-height:16px;
+	font-style:italic;
+}
+ul.iw_thumbs li:nth-child(1){
+	margin-left:50px;
+}
+ul.iw_thumbs li:nth-child(even){
+	margin-top:30px;
+}
+ul.iw_thumbs li:nth-child(3n){
+	margin-left:20px;
+}
+/*www.bootstrapmb.com*/
+ul.iw_thumbs li img{
+	border:7px solid #fff;
+	cursor:pointer;
+	position:relative;
+	-moz-box-shadow:1px 1px 1px #aaa;
+	-webkit-box-shadow:1px 1px 1px #aaa;
+	box-shadow:1px 1px 1px #aaa;
+}
+ul.iw_thumbs li img:hover{
+	-moz-box-shadow:1px 1px 7px #777;
+	-webkit-box-shadow:1px 1px 7px #777;
+	box-shadow:1px 1px 7px #777;
+}
+ul.iw_thumbs li:nth-child(even) img{
+	height:40px;
+}
+ul.iw_thumbs li:nth-child(odd) img{
+	height:80px;
+}
+ul.iw_thumbs li:nth-child(5n) img{
+	height:140px;
+}
+ul.iw_thumbs li:nth-child(6n) img{
+	height:220px;
+}
+ul.iw_thumbs li:nth-child(7n) img{
+	height:40px;
+}
+.iw_ribbon{
+	position:fixed;
+	height:126px; /*first 126 then 0 to close and 100% to open (while top goes to 0) */
+	width:0px;/*first 0 then animate to 100%*/
+	left:0px;/*or right 0*/
+	top:0px; /*First, top of thumb, then animate to 0*/
+	background:#000;
+	opacity:0.8;
+	z-index:10;
+	overflow:hidden;
+	display:none;
+}
+.iw_close{
+	position:absolute;
+	top:10px;
+	right:10px;
+	background:#f0f0f0 url(../images/close.gif) no-repeat center center;
+	width:18px;
+	height:18px;
+	display:none;
+	cursor:pointer;
+}
+.iw_zoom{
+	color:white;
+	font-size:8px;
+	font-family:Arial, sans-serif;
+	text-transform:uppercase;
+	padding:14px;
+	display:none;
+	float:right;
+	margin-right:30px;
+}
+.iw_ribbon img{
+	position:absolute;
+	top:50%;
+	left:50%;
+	border:7px solid #fff;
+}
+.iw_loading{
+	background: #fff url(../images/loader.gif) no-repeat center center;
+	width:28px;
+	height:28px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 10000;
+	margin: -14px 0px 0px -14px;
+	opacity:0.8;
+}
+
+/* picwall end  */
+@media screen and (max-width: 900px) {
+    .layout_page {
+      -webkit-box-orient: vertical;
+      -moz-box-orient: vertical;
+      -o-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+  }
+.layout_page {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: start;
+    -moz-box-align: start;
+    -o-box-align: start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1200px;
+  }
+.layout_page > div:first-child:not(.recent-posts) {
+    padding: 50px 40px;
+    border-radius: 8px;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .layout_page > div:first-child:not(.recent-posts):hover {
+    -webkit-box-shadow: 0 4px 12px 12px rgba(7,17,27,0.15);
+    box-shadow: 0 4px 12px 12px rgba(7,17,27,0.15);
+  }
+  .layout_page > div:first-child:not(.recent-posts) {
+    width: 75%;
+  }
+  @media screen and (max-width: 768px) {
+    .layout_page {
+      padding: 0 4% !important;
+    }
+    .layout_page > div:first-child:not(.recent-posts) {
+      padding: 1.8rem 0.7rem;
+    }
+}
+@media screen and (max-width: 900px) {
+    .layout_page > div:first-child:not(.recent-posts) {
+      width: 100% !important;
+    }
+  }
+  @media screen and (min-width: 2000px) {
+    .layout_page {
+      max-width: 1500px;
+    }
+    .layout_page.hide-aside {
+      max-width: 1300px;
+    }
+  }
+  .hide-aside {
+    max-width: 1000px;
+  }
+  .hide-aside > div {
+    width: 100% !important;
+  }
+  #content-inner {
+    -webkit-animation: main 1s;
+    -moz-animation: main 1s;
+    -o-animation: main 1s;
+    -ms-animation: main 1s;
+    animation: main 1s;
+  }
+  #article-container a {
+    color: #49b1f5;
+  }
+  #article-container a:hover {
+    text-decoration: underline;
+  }
+  #article-container img {
+    margin: 0 auto 0.8rem;
+  }
+  #article-container p {
+    margin: 0 0 0.8rem;
+  }
+  #picwall hr:before {
+    position: absolute;
+    top: -10px;
+    left: 5%;
+    z-index: 1;
+    color: #49b1f5;
+    content: '\f0c4';
+    font-style: normal;
+    font-variant: normal;
+    font-size: 20px;
+    line-height: 1;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-weight: normal;
+    font-family: FontAwesome;
+}
+#picwall hr {
+    position: relative;
+    margin: 2rem auto;
+    width: calc(100% - 4px);
+    border: 2px dashed #a4d8fa;
+
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+
+    background-color: #fff
+}
