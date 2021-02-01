@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>养老基地</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2021-01-26T12:04:25.104Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>Una</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>diary1</title>
+    <link href="http://example.com/2021/01/26/diary1/"/>
+    <id>http://example.com/2021/01/26/diary1/</id>
+    <published>2021-01-26T11:46:14.000Z</published>
+    <updated>2021-01-26T12:04:25.104Z</updated>
+    
+    <content type="html"><![CDATA[<p>其实很早以前就想搭建一个属于我们自己的情侣网站，但是碍于种种原因没能实现，没想到在最忙的时间反而忙里偷闲搭建了这个小破站。<br>2020年1月9日<br>大概是想逃避科研的痛苦，又想到了下一个节日即将到来，在这天终于开始了第一步。<br>旁敲侧击问过南京，我在游戏里盖了一个属于我们的家，现在我在思考给这个家取一个名字，你有什么想法吗？<br>得到的回答竟然是，这种取名的行为大概是我小学会做的事吧。<br>（认真思考了一下 确实很幼稚哈哈哈<br>然后继续幼稚下去开始撒泼耍赖，最终南京说了一个回答 “养老基地”。</p><p>我们想要在这一生奋斗完之后，回到乡村，</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;其实很早以前就想搭建一个属于我们自己的情侣网站，但是碍于种种原因没能实现，没想到在最忙的时间反而忙里偷闲搭建了这个小破站。&lt;br&gt;2020年1月9日&lt;br&gt;大概是想逃避科研的痛苦，又想到了下一个节日即将到来，在这天终于开始了第一步。&lt;br&gt;旁敲侧击问过南京，我在游戏里盖了一
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>nanjing1</title>
+    <link href="http://example.com/2021/01/18/nanjing1/"/>
+    <id>http://example.com/2021/01/18/nanjing1/</id>
+    <published>2021-01-18T15:24:41.000Z</published>
+    <updated>2021-01-18T15:56:07.675Z</updated>
+    
+    <content type="html"><![CDATA[<p>测试南京</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;测试南京&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>test4</title>
+    <link href="http://example.com/2021/01/09/test4/"/>
+    <id>http://example.com/2021/01/09/test4/</id>
+    <published>2021-01-09T14:32:55.000Z</published>
+    <updated>2021-01-29T13:47:41.648Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="http://una-love.oss-cn-beijing.aliyuncs.com/blog/yourname1.jpg" alt=""></p><script src="/js/jquery.min.js"></script><div id="dbcontent"></div><script>$('#dbcontent').load('../../../../movies/index.html .hexo-douban-item:nth-child(1)');</script><br>  <meta name="generator" content="Hexo 3.9.0"><br>    <meta charset="utf-8"><br>    <meta http-equiv="X-UA-Compatible" content="IE=edge"><br>    <meta name="viewport" content="width=device-width, initial-scale=1"><br>    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ --><br>    <title>Bootstrap 101 Template</title><br><br>    <!-- Bootstrap --><br>    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"><br><br>    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 --><br>    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 --><br>    <!--[if lt IE 9]>      <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>      <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>    <![endif]--><br>  <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style><br>  <br>    <h1>你好，世界！</h1><br><br>    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) --><br>    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script><br>    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 --><br>    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script><br>  <br>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;http://una-love.oss-cn-beijing.aliyuncs.com/blog/yourname1.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+&lt;script src=&quot;/js/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;div id=
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>有何不可</title>
+    <link href="http://example.com/2021/01/09/test3/"/>
+    <id>http://example.com/2021/01/09/test3/</id>
+    <published>2021-01-09T14:21:57.000Z</published>
+    <updated>2021-01-18T15:55:05.311Z</updated>
+    
+    <content type="html"><![CDATA[<p>天空好想下雨</p><p>我好想住你隔壁</p><p>傻站在你家楼下</p><p>抬起头数乌云</p><p>如果场景里出现一架钢琴</p><p>我会唱歌给你听</p><p>哪怕好多盆水往下淋</p><p>夏天快要过去</p><p>请你少买冰淇淋</p><p>天凉就别穿短裙</p><p>别再那么淘气</p><p>如果有时不那么开心</p><p>我愿意将格洛米借给你</p><p>你其实明白我心意</p><p>为你唱这首歌没有什么风格</p><p>它仅仅代表着我想给你快乐</p><p>为你解冻冰河为你做一只扑火的飞蛾</p><p>没有什么事情是不值得</p><p>为你唱这首歌没有什么风格</p><p>它仅仅代表着我希望你快乐</p><p>为你辗转反侧为你放弃世界有何不可</p><p>夏末秋凉里带一点温热有换季的颜色</p><p>天空好想下雨</p><p>我好想住你隔壁</p><p>傻站在你家楼下</p><p>抬起头数乌云</p><p>如果场景里出现一架钢琴</p><p>我会唱歌给你听</p><p>哪怕好多盆水往下淋</p><p>夏天快要过去</p><p>请你少买冰淇淋</p><p>天凉就别穿短裙</p><p>别再那么淘气</p><p>如果有时不那么开心</p><p>我愿意将格洛米借给你</p><p>你其实明白我心意</p><p>为你唱这首歌没有什么风格</p><p>它仅仅代表着我想给你快乐</p><p>为你解冻冰河为你做一只扑火的飞蛾</p><p>没有什么事情是不值得</p><p>为你唱这首歌没有什么风格</p><p>它仅仅代表着我希望你快乐</p><p>为你辗转反侧为你放弃世界有何不可</p><p>夏末秋凉里带一点温热</p><p>为你解冻冰河为你做一只扑火的飞蛾</p><p>没有什么事情是不值得</p><p>为你唱这首歌没有什么风格</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;天空好想下雨&lt;/p&gt;
+&lt;p&gt;我好想住你隔壁&lt;/p&gt;
+&lt;p&gt;傻站在你家楼下&lt;/p&gt;
+&lt;p&gt;抬起头数乌云&lt;/p&gt;
+&lt;p&gt;如果场景里出现一架钢琴&lt;/p&gt;
+&lt;p&gt;我会唱歌给你听&lt;/p&gt;
+&lt;p&gt;哪怕好多盆水往下淋&lt;/p&gt;
+&lt;p&gt;夏天快要过去&lt;/p&gt;
+&lt;p&gt;请你少买冰淇淋&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="许嵩" scheme="http://example.com/categories/%E8%AE%B8%E5%B5%A9/"/>
+    
+    
+      <category term="自定义" scheme="http://example.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>认错</title>
+    <link href="http://example.com/2021/01/09/test2/"/>
+    <id>http://example.com/2021/01/09/test2/</id>
+    <published>2021-01-09T14:21:52.000Z</published>
+    <updated>2021-01-18T15:55:12.904Z</updated>
+    
+    <content type="html"><![CDATA[<p>那天午后 我站在你家门口</p><p>你咬咬嘴唇还是说出了分手</p><p>我的挽留和眼泪全都没有用</p><p>或许我应该自食这苦果</p><p>你的迁就 我一直领悟不够</p><p>以为爱已强大的不要理由</p><p>心开始颤抖 明白了你的难受</p><p>但你的表情已经冷漠</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你已经不再爱我</p><p>我带你回忆曾经快乐的时空</p><p>你只是劝我别再执着</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你喜欢如今的生活</p><p>你带我回忆爱里互相的折磨</p><p>还告诉了我 别再来认错 认结果</p><p>那天午后 我站在你家门口</p><p>你咬咬嘴唇还是说出了分手</p><p>我的挽留和眼泪全都没有用</p><p>或许我应该自食这苦果</p><p>你的迁就 我一直领悟不够</p><p>以为爱已强大的不要理由</p><p>心开始颤抖 明白了你的难受</p><p>但你的表情已经冷漠</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你已经不再爱我</p><p>我带你回忆曾经快乐的时空</p><p>你只是劝我别再执着</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你喜欢如今的生活</p><p>你带我回忆爱里互相的折磨</p><p>还告诉了我 别再来认错</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你已经不再爱我</p><p>我带你回忆曾经快乐的时空</p><p>你只是劝我别再执着</p><p>全是我的错</p><p>现在认错有没有用</p><p>你说你喜欢如今的生活</p><p>你带我回忆爱里互相的折磨</p><p>还告诉了我 别再来认错 认结果</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;那天午后 我站在你家门口&lt;/p&gt;
+&lt;p&gt;你咬咬嘴唇还是说出了分手&lt;/p&gt;
+&lt;p&gt;我的挽留和眼泪全都没有用&lt;/p&gt;
+&lt;p&gt;或许我应该自食这苦果&lt;/p&gt;
+&lt;p&gt;你的迁就 我一直领悟不够&lt;/p&gt;
+&lt;p&gt;以为爱已强大的不要理由&lt;/p&gt;
+&lt;p&gt;心开始颤抖 明白了你的难受&lt;/p&gt;
+&lt;p
+      
+    
+    </summary>
+    
+      <category term="许嵩" scheme="http://example.com/categories/%E8%AE%B8%E5%B5%A9/"/>
+    
+    
+      <category term="自定义， 歌曲" scheme="http://example.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89%EF%BC%8C-%E6%AD%8C%E6%9B%B2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>星座书上</title>
+    <link href="http://example.com/2020/01/09/test1/"/>
+    <id>http://example.com/2020/01/09/test1/</id>
+    <published>2020-01-09T14:20:37.000Z</published>
+    <updated>2021-01-18T15:44:33.351Z</updated>
+    
+    <content type="html"><![CDATA[<p>星光点亮了</p><p>海水泛起皱褶</p><p>晚风咸咸的</p><p>吹散你我身旁余热</p><p>不够彼此信任</p><p>还是有了裂痕</p><p>为什么感觉有些陌生了</p><p>沿海岸奔跑</p><p>寻找属于我们的岛</p><p>有一些问号</p><p>也许对你并不重要</p><p>可很久没深聊</p><p>也很久没拥抱</p><p>翻开书本把答案寻找</p><p>星座书上说我们不合</p><p>金牛座的我配不上你的好</p><p>难过后想想也许只是碰巧</p><p>我们的故事写书人怎明了</p><p>星座书上说我们不合</p><p>最后我偷偷把那页撕掉</p><p>真的爱情没法预料</p><p>何必让你知道</p><p>就算你早知道</p><p>沿海岸奔跑</p><p>寻找属于我们的岛</p><p>有一些问号</p><p>也许对你并不重要</p><p>可很久没深聊</p><p>也很久没拥抱</p><p>翻开书本把答案寻找</p><p>星座书上说我们不合</p><p>金牛座的我配不上你的好</p><p>难过后想想也许只是碰巧</p><p>我们的故事写书人怎明了</p><p>星座书上说我们不合</p><p>最后我偷偷把那页撕掉</p><p>真的爱情没法预料</p><p>何必让你・・・</p><p>星座书上说我们不合</p><p>金牛座的我配不上你的好</p><p>难过后想想也许只是碰巧</p><p>我们的故事写书人怎明了</p><p>星座书上说我们不合</p><p>最后我偷偷把那页撕掉</p><p>真的爱情没法预料</p><p>何必让你知道</p><p>就算你早知道</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;星光点亮了&lt;/p&gt;
+&lt;p&gt;海水泛起皱褶&lt;/p&gt;
+&lt;p&gt;晚风咸咸的&lt;/p&gt;
+&lt;p&gt;吹散你我身旁余热&lt;/p&gt;
+&lt;p&gt;不够彼此信任&lt;/p&gt;
+&lt;p&gt;还是有了裂痕&lt;/p&gt;
+&lt;p&gt;为什么感觉有些陌生了&lt;/p&gt;
+&lt;p&gt;沿海岸奔跑&lt;/p&gt;
+&lt;p&gt;寻找属于我们的岛&lt;/p&gt;
+&lt;p&gt;有一些问号&lt;
+      
+    
+    </summary>
+    
+      <category term="许嵩" scheme="http://example.com/categories/%E8%AE%B8%E5%B5%A9/"/>
+    
+    
+      <category term="自定义" scheme="http://example.com/tags/%E8%87%AA%E5%AE%9A%E4%B9%89/"/>
+    
+  </entry>
+  
+</feed>
