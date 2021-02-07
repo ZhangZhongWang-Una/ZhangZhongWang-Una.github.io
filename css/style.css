@@ -5735,7 +5735,7 @@ i.iconfont.down {
         font-size: 14px
     }
     
-    .post-footer,
+    /* .post-footer, */
     .post-share,
     .post-like {
         display: none
