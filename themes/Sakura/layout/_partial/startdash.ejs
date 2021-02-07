@@ -1,17 +1,13 @@
 <div class="top-feature-row">
-  <!-- <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-  <i class="fa fa-anchor" aria-hidden="true">
-  </i>
-  START:DASH!!</h1> -->
   <h1 class="fes-title" style="font-family: 'Ubuntu', sans-serif;">
-      <i class="fa fa-heart" aria-hidden="true" style="color: #FF69B4;"></i>
-  人世间有百媚千红，唯独你是我情之所钟。</h1>
+      <i class="fa fa-heartbeat" aria-hidden="true" style="color: #FF69B4;"></i>
+  惊觉心思不露，原只因已入骨，情不知所起，一往而情深。</h1>
   <% for (dash in theme.startdash) { %>
   <div class="top-feature-v2">
     <div class="the-feature square from_left_and_right">
       <a href="<%= theme.startdash[dash].url %>" target="_blank">
         <div class="img">
-          <img src="<%- (theme.cdn || '') + theme.startdash[dash].img %>">
+          <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" data-src="<%- theme.startdash[dash].img %>">
         </div>
         <div class="info">
           <h3><%= theme.startdash[dash].title %></h3>

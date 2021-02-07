@@ -1,25 +1,24 @@
 <link href="/css/SiteTimeline.css" rel="stylesheet">
-<!-- <div class="blank">
-</div> -->
+
 <div class="pattern-center-blank">
 </div>
 <div class="pattern-center ">
     <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200303155335.webp" data-src="<%= page.photos %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img src="<%= theme.lazyloadImg %>" data-src="https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020507.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
     <header class="pattern-header ">
         <h1 class="entry-title">
-            归档 | Archives</h1>
+            归档</h1>
+            <span class="cat-des">
+                <p >想把世界最好的给你，却发现世上最好的是你
+                </p>
+            </span>
     </header>
 </div>
 <div id="content" class="site-content">
     <div id="main">
 
         <div id="main-part">
-            <!-- <div id="contentss">
-                <%- partial('_widget/post-charts') %>
-            </div> -->
-            <!--时间轴-->
             <div id="sitetimeline">
                 <div class="article-sort-title">
                     文章总览
@@ -36,8 +35,8 @@
                                             <% } %>
                                                 <div class="article-sort-item">
                                                     <a class="article-sort-item-img" href="<%- url_for(post.path) %>" title="<%= post.title %>" data-pjax-state="<%= theme.pjax %>">
-                                                        <img data-lazy-src="/images/loader/orange.progress-bar-stripe-loader.svg" alt="<%= post.title %>" onerror="this.onerror=null,
-                                                        this.src=&quot;/images/404.jpg&quot;" data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>"></a>
+                                                        <img data-lazy-src="<%- theme.lazyloadImg %>" alt="<%= post.title %>" onerror="this.onerror=null,
+                                                        this.src=&quot;/img/custom/404.png&quot;" data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>"></a>
                                                     <div class="article-sort-item-info">
                                                         <div class="article-sort-item-time">
                                                             <i class="fa fa-calendar" aria-hidden="true"></i>
@@ -47,13 +46,6 @@
                                                         </div>
                                                         <a class="article-sort-item-title" href="<%- url_for(post.path) %>" title="<%= post.title %>" data-pjax-state="<%= theme.pjax %>">
                                                             <%= post.title %>
-                                                                <!-- <% if (post.description && post.description.length > 0) { %>
-                                                                <%- post.description %>
-                                                                    <% } else { %>
-                                                                        <% if (theme.post_description.enable) { %>
-                                                                            <%- strip_html(post.content).substring(0, 50) %>
-                                                                                <% } %>
-                                                                                    <% } %> -->
                                                         </a>
                                                     </div>
                                                 </div>

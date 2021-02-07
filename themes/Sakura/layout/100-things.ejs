@@ -1,6 +1,4 @@
-<link rel="stylesheet" href="/lib/bootstrap-3.3.7-dist/css/bootstrap.min.css" media="all">
-<script src="/js/jquery.min.js"></script>
-<script src="/lib/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="<%= theme.cdn + '/assets/ext/bootstrap/css/bootstrap.min.css'%>" media="all">
 <style>
     .td1 {
     width: 45px;
@@ -19,19 +17,20 @@
     border-left: 1px solid transparent !important;
     }
 </style>
-
 <div class="pattern-center-blank">
 </div>
 <div class="pattern-center ">
     <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200303155335.webp" data-src="/images/we/sonoftheweather.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img src="<%= theme.lazyloadImg%>" data-src="<%= page.photos%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
     <header class="pattern-header ">
         <h1 class="entry-title">
             在一起要做的100件事
         </h1>
-        <span class="cat-des"> 
-        <p style="color: lightcoral;">山有云烟，鸟有碧海青天；冬有睡眠，秋有暗香无边；故事有流年，我们的未来还长远</p>
+        <span class="cat-des">
+            <!-- style="color: lightcoral;"  -->
+        <p style="    margin-block-start: 1em;
+        margin-block-end: 1em;"><%= page.description%></p>
         </span>
     </header>
 </div>
@@ -1017,3 +1016,4 @@
         </main>
     </div>
 </div>
+<script src="<%= theme.cdn + '/assets/ext/bootstrap/js/bootstrap.min.js'%> "></script>

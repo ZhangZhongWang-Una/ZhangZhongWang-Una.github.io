@@ -1,10 +1,10 @@
 ---
-title: zzw
+title: Una
 comments: false
 date: 2021-01-18 23:08:39
-keywords:
+keywords: 
 description: 一个秃头的男孩
-photos: /images/categories1.png
+photos: http://una-love.oss-cn-beijing.aliyuncs.com/blog/picwall/picwall_4.jpg
 layout: author
 type: Una
 ---

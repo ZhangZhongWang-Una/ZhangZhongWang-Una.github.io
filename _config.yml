@@ -1,7 +1,3 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
 # Site
 title: 养老基地
 subtitle:
@@ -13,7 +9,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://example.com
+url: http://pensionbase.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -96,25 +92,8 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
-# backup
-# backup:
-#   type: git
-#   message: backup my blog of https://yourname.github.io/
-#   repository:
-#     # github: https://github.com/honjun/honjun.github.io.git,backup
-#     coding: https://git.coding.net/hojun/hojun.git,backup
 
-#RSS
-# feed:
-#   type: atom
-#   path: atom.xml
-#   limit: 20
-#   hub:
-#   content:
-#   content_limit: 140
-#   content_limit_delim: ' '
-#   order_by: -date
-# 豆瓣
+# douban
 douban:
   user: 231694379
   builtin: false
@@ -124,4 +103,4 @@ douban:
     length: 2
     valine_id:  C1HIie3isYzLvrWHW1k1CfTE-gzGzoHsz
     valine_key: PSLCzYDGfVJXcXfsLiUARac0
-  timeout: 10000 
+  timeout: 10000

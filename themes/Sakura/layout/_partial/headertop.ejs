@@ -6,14 +6,15 @@
     <div class="focusinfo no-select">
       <div class="header-tou">
         <a href="<%- theme.url%>">
-          <img src="<%- (theme.cdn || '') + theme.avatar %>">
+          <!-- <img src="<%- (theme.cdn || '') + theme.avatar %>"> -->
+          <img src="<%- theme.avatar %>">
         </a>
       </div>
       <div class="header-info">
         <p><%= theme.description %></p>
         <div class="top-social_v2">
           <li id="bg-pre">
-            <img class="flipx" src="/images/next-b.svg">
+            <img class="flipx" src="/img/custom/next-b.svg">
           </li>
           <% if (theme.social) {%>
             <% for (i in theme.social) {%>
@@ -23,7 +24,7 @@
                     <img src="<%- (theme.cdn || '') + theme.social[i].img%>">
                   </a>
                   <div class="wechatInner">
-                    <img src="<%- (theme.cdn || '') + theme.social[i].qrcode%>">
+                    <img src="<%- theme.social[i].qrcode %>">
                   </div>
                 </li>
               <% } else { %>
@@ -36,7 +37,7 @@
             <% } %>
           <% } %>
           <li id="bg-next">
-            <img src="/images/next-b.svg">
+            <img src="/img/custom/next-b.svg">
           </li>
         </div>
       </div>

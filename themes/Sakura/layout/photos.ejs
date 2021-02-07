@@ -1,21 +1,15 @@
-<link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">  
-<!-- fancybox大图查看 需jq -->
-<script src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
-
 <link href="/css/photos.css" rel="stylesheet">
 <div class="pattern-center-blank">
 </div>
 <div class="pattern-center ">
     <div class="pattern-attachment-img">
-        <img src="<%= page.photos%>" data-src="<%= page.photos%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img src="<%= theme.lazyloadImg %>" data-src="<%= page.photos%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
     <header class="pattern-header ">
         <h1 class="entry-title">
-            相册 | photo
+            相册
         </h1>
         <span class="cat-des">
-          <i class="fa fa-venus-double" aria-hidden="true" style="color: lightcoral;"></i>
         <p><%= page.description%></p>
         </span>
     </header>
@@ -28,8 +22,9 @@
         <hr></hr>
         <div class="content">
             <div class="iw_wrapper">
+                <p style="font-size: 40px;font-weight: 500;width: 10%;margin: auto;padding: 0;border: 0;">不给看不给看</p>
                 <ul class="iw_thumbs" id="iw_thumbs">
-                    <li><a href="<%- (theme.oss) + 'picwall/picwall_0.jpeg' %>"  data-fancybox="picwall" class="fancybox">
+                    <!-- <li><a href="<%- (theme.oss) + 'picwall/picwall_0.jpeg' %>"  data-fancybox="picwall" class="fancybox">
                         <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)"
                         data-src="<%- (theme.oss) + 'picwall_min/picwall_0.jpeg' %>" alt=""></a>
                     </li>
@@ -372,11 +367,8 @@
                        <li><a href="<%- (theme.oss) + 'picwall/picwall_91.jpg' %>"  data-fancybox="picwall" class="fancybox"> 
                         <img src="<%- theme.lazyloadImg %>" class=" lazyload " onerror="imgError(this,3)" 
                         data-src="<%- (theme.oss) + 'picwall_min/picwall_91.jpg' %>" alt=""></a>
-                       </li>
-                       
-
-
-                </ul>
+                       </li> -->
+                </ul> 
             </div>
             <div id="iw_ribbon" class="iw_ribbon">
                 <span class="iw_close"></span>
@@ -385,23 +377,4 @@
         </div>
         </div></div></div></main>
 </div>
-<script>
-  $('[data-fancybox="picwall"]').fancybox({
-    protect: true,
-    thumbs: {
-    autoStart: false, // Display thumbnails on opening
-    hideOnClose: true, // Hide thumbnail grid when closing animation starts
-    parentEl: ".fancybox-container", // Container is injected into this element
-    axis: "y" // Vertical (y) or horizontal (x) scrolling
-  },
-    afterLoad : function(instance, current) {
-        var pixelRatio = window.devicePixelRatio || 1;
-
-        if ( pixelRatio > 1.5 ) {
-            current.width  = current.width  / pixelRatio;
-            current.height = current.height / pixelRatio;
-        }
-    }
-  });
-</script>
 

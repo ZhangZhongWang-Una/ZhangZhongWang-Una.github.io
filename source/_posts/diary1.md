@@ -1,15 +1,15 @@
 ---
-title: diary1
+title: 情人节快乐
 author: Una
-avatar: /images/Una.jpg
+avatar: /img/custom/Una.jpg
 authorLink: /author/master
 authorAbout: 偶尔做一个温柔的人，不争不抢，不紧不慢，不言不语，淡然处之。
 authorDesc: 丢糖的小孩Una
 comments: true
-photos: /images/we/sonoftheweather.jpg
+photos: https://una-love.oss-cn-beijing.aliyuncs.com/blog/picwall/picwall_6.jpg
 date: 2021-01-26 19:46:14
-categories:
-tags:
+categories: 我们
+tags: ["纪实","节日"]
 keywords:
 description:
 ---
@@ -22,4 +22,4 @@ description:
 （认真思考了一下 确实很幼稚哈哈哈
 然后继续幼稚下去开始撒泼耍赖，最终南京说了一个回答 “养老基地”。
 
-我们想要在这一生奋斗完之后，回到乡村，
+未完待续

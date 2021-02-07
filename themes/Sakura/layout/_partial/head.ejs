@@ -8,7 +8,7 @@
   var title = page.title;
 
   if (is_archive()){
-    title = __('archive_a');
+    title = __('归档');
 
     if (is_month()){
       title += ': ' + page.year + '/' + page.month;
@@ -16,9 +16,9 @@
       title += ': ' + page.year;
     }
   } else if (is_category()){
-    title = __('category') + ': ' + page.category;
+    title = __('分类') + ': ' + page.category;
   } else if (is_tag()){
-    title = __('tag') + ': ' + page.tag;
+    title = __('标签') + ': ' + page.tag;
   }
   %>
   <title itemprop="name"><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
@@ -26,6 +26,7 @@
     <link rel="shortcut icon" href="<%- theme.favicon %>">
   <% } %>
   <meta http-equiv="x-dns-prefetch-control" content="on">
+  <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+SerifMerriweather|Merriweather+Sans|Source+Code+Pro|Ubuntu:400,700|Noto+Serif+SC" media="all">
   <link rel="dns-prefetch" href="//cdn.jsdelivr.net">
   <link rel="stylesheet" id="saukra_css-css" href="/css/style.css" type="text/css" media="all">
@@ -33,19 +34,13 @@
   <link rel="stylesheet" href="/css/font.css" media="all">
   <link rel="stylesheet" href="/css/insight.css" media="all">
   <link rel="stylesheet" href="/css/jquery.fancybox.min.css" media="all">
-  <!-- <link rel="stylesheet" href="/css/zoom.css" media="all"> -->
-  <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
-<!--   <link rel="stylesheet" id="saukra_css-css" href="https://2heng.xin/wp-content/cache/autoptimize/css/autoptimize_ad42a61f4c7d4bdd9f91afcff6b5dda5.css
-" type="text/css" media="all"> -->
+  
+  <!-- <link rel="stylesheet" type="text/css" href="/css/sharejs.css"> -->
   <script>
   /*Initial Variables*/
   var mashiro_option = new Object();
   var mashiro_global = new Object();
   mashiro_option.NProgressON = true;
-  /* 
-   * 邮箱信息之类的东西可以填在这里，这些js变量基本都作用于sakura-app.js
-   * 这样的设置仅是为了方便在基于PHP开发的主题中设置js变量，既然移植到了Node上，我想或许可以精简这一逻辑吧
-   */
   mashiro_option.email_domain = "";
   mashiro_option.email_name = "";
   mashiro_option.cookie_version_control = "";
@@ -58,9 +53,6 @@
   mashiro_option.mathjax = "<%= theme.mathjax %>";
   mashiro_option.qq_api_url = "https://api.mashiro.top/qqinfo/"; 
   mashiro_option.qq_avatar_api_url = "https://api.mashiro.top/qqinfo/";
-
-  // mashiro_option.jsdelivr_css_src = "https://cdn.jsdelivr.net/gh/moezx/cdn@3.4.5/css/lib.min.css";
-  // mashiro_option.float_player_on = true;
 
   /*End of Initial Variables*/
   </script>

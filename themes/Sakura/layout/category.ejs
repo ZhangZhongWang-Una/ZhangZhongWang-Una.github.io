@@ -1,44 +1,15 @@
-<%
-  var img = '/images/categories.jpg';
-  var zh =  page.category ;
-  var en = '天空好想下雨';
-%>
-    <!-- <div class="blank">
-    </div> -->
     <div class="pattern-center-blank">
     </div>
     <div class="pattern-center ">
         <div class="pattern-attachment-img">
-            <img src="https://cdn.jsdelivr.net/gh/drew233/cdn/20200303155335.webp" data-src="<%= __(img) %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+            <img src="<%- theme.lazyloadImg %>" data-src="https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020601.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
         </div>
         <header class="pattern-header ">
             <h1 class="entry-title">
-                分类 |
-                <%= __(zh) %>
+                分类 | <%= page.category %>
             </h1>
-            <span class="cat-des">
-              <i class="fa fa-venus-double" aria-hidden="true" style="color: lightcoral;"></i>
-            <p><%= __(en) %></p>
-            </span>
         </header>
     </div>
-
-    <!-- <div class="pattern-center-blank"></div>
-<div class="pattern-center-sakura ">
-  <div class=" single-center ">
-    <img data-src="<%= __(img) %>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-  </div>
-  <header class="pattern-header ">
-    <h1 class="cat-title"><%= __(zh) %></h1>
-    <span class="cat-des">
-      <span style="color: lightcoral;">
-        <i class="fa fa-venus-double" aria-hidden="true" style="color: lightcoral;"></i>
-      </span>
-      <p><%= __(en) %></p>
-    </span>
-  </header>
-</div> -->
-
 
     <div id="content" class="site-content">
         <div id="primary" class="content-area kuangjia">

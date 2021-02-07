@@ -1,43 +1,29 @@
-# site name
 prefixName: 0818x1110の
 siteName: 养老基地
-# favicon and site master avatar
-favicon: /images/favicon.ico
-avatar: /images/avatar.jpg
-url: /zhangzhongwang-una.github.io
+favicon: /img/custom/favicon.ico
+avatar: /img/custom/avatar.jpg
+url: https://pensionbase.cn/
 description: 记录爱情&记录生活
-#cdn: https://cdn.jsdelivr.net/gh/honjun/cdn@1.6
+cdn: https://cdn.jsdelivr.net/gh/ZhangZhongWang-Una/CDN@1.0
 pjax: 1
 # 1开启
 mathjax: 0
-oss: 'http://una-love.oss-cn-beijing.aliyuncs.com/blog/'
+oss: http://una-love.oss-cn-beijing.aliyuncs.com/blog/
 
 notice: 把我的快乐共享给屏幕前的你们
-lazyloadImg: /images/loader/orange.progress-bar-stripe-loader.svg
+lazyloadImg: /img/loader/orange.square-circle-preloader.svg
 
 menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake }
-  # 告白: { path: /confession, fa: fa-film faa-vertical }
-  # 清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
-  #   番组: {path: /bangumi/, fa: fa-film faa-vertical }, 
-  #   歌单: {path: /music/, fa: fa-headphones }
-  # } }
-  相册: {path: /photos, fa: fa-photo }
+  生活: { path: javascript:;, fa: fa-file-text-o faa-shake, submenus: {
+    电影: {path: /, fa: fa-film faa-shake},
+    追剧: {path: /, fa: fa-television faa-shake}
+  }}
+  相册: {path: /photos, fa: fa-photo faa-shake}
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
-  100件事: {path: /100-things, fa: fa-envelope-o }
-  # 友人帐: { path: /links/, fa: fa-link faa-shake }
-  # 赞赏: { path: /donate/, fa: fa-heart faa-pulse }
+  100件事: {path: /100-things, fa: fa-envelope-o faa-shake}
   爱情长跑线: {path: /timeline, fa: fa-link faa-shake}
-  # 电影: {path: /movies, fa: fa-link faa-shake}
-  # 关于: { path: /about, fa: fa-leaf faa-wrench }
-  #   , submenus: { 
-  # #   我？: {path: /about/, fa: fa-meetup},
-  # #  Lab: {path: /lab/, fa: fa-cogs },
-  # } }
-  # 客户端: { path: /client/, fa: fa-android faa-vertical }
-  # RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
-
 
 # Home page sort type: -1: newer first，1: older first.
 homePageSortType: -1
@@ -45,47 +31,41 @@ homePageSortType: -1
 homeArticleShown: 10
 # 背景图片 更好的修改
 bg:
-  # - http://una-love.oss-cn-beijing.aliyuncs.com/blog/yourname1.jpg
-  - https://una-love.oss-cn-beijing.aliyuncs.com/figured/20210108120442.png
-  # - https://una-love.oss-cn-beijing.aliyuncs.com/figured/A我觉得好图2.jpg
-  # - https://una-love.oss-cn-beijing.aliyuncs.com/figured/fengmian.jpg
-  # - https://una-love.oss-cn-beijing.aliyuncs.com/figured/截图2.jpg
-  # - https://una-love.oss-cn-beijing.aliyuncs.com/figured/合照15.jpg
+  - https://una-love.oss-cn-beijing.aliyuncs.com/figured/fengmian.jpg
+  # - http://una-love.oss-cn-beijing.aliyuncs.com/blog/picwall/picwall_6.jpg
+  # - http://una-love.oss-cn-beijing.aliyuncs.com/blog/picwall/picwall_8.jpg
+  # - http://una-love.oss-cn-beijing.aliyuncs.com/blog/picwall/picwall_9.jpg
 
 # 背景图片样式 空 原图效果 filter-dim 阴影 filter-grid 横条 filter-dot 点点
 bgclass: 
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /, title: left, desc: 左 1 2, img: /images/we/sonoftheweather.jpg}
-  #- {url: http://space.bilibili.com/271849279, title: Bilibili, desc: 博主的b站视频, img: /img/startdash/bilibili.jpg}
-  - {url: /, title: middle, desc: 中, img: /images/we/sonoftheweather.jpg}
-  - {url: /, title: right, desc: 右, img: /images/we/sonoftheweather.jpg}
+  - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
+  - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
+  - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
 
 
 
 # your site build time or founded date
-siteBuildingTime: 01/01/2020
+inLoveTime: 11/11/2016 00:00:00
 
 #social  url, img PC端配置
 social:
-  github: {url: http://github.com/ZhangZhongWang-Una, img: /images/social/github.png}
-  sina: {url: https://weibo.com/u/1849749645?is_all=1, img: /images/social/sina.png}
-  netease: {url: https://music.163.com/#/user/home?id=511730579, img: /images/social/wangyiyun.png}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=1248001691&site=qq&menu=yes, img: /images/social/qq.png}
-  taptap: {url: https://www.taptap.com/user/16248814, img: /images/social/taptap.png}
-  wechat: {url: javascript:;, qrcode: /images/social/wechat.jpg, img: /images/social/wechat.png}
+  sina: {url: https://weibo.com/u/1849749645?is_all=1, img: /img/social/sina.png}
+  github: {url: http://github.com/ZhangZhongWang-Una, img: /img/social/github.png}
+  netease: {url: https://music.163.com/#/user/home?id=511730579, img: /img/social/wangyiyun.png}
+  # qq: {url: https://wpa.qq.com/msgrd?v=3&uin=1248001691&site=qq&menu=yes, img: /img/social/qq1.png}
+  # taptap: {url: https://www.taptap.com/user/16248814, img: /img/social/taptap.png}
+  csdn: {url: https://blog.csdn.net/zzw1248001691, img: /img/social/csdn.png}
+  wechat: {url: javascript:;, qrcode: /img/social/wechat.jpg, img: /img/social/wechat.png}
 
 #social  url, img 移动端配置
 msocial:
   github: {url: http://github.com/ZhangZhongWang-Una, fa: fa-github, color: 333}
   weibo: {url: https://weibo.com/u/1849749645?is_all=1, fa: fa-weibo, color: dd4b39}
-  qq: {url: https://wpa.qq.com/msgrd?v=3&uin=1248001691&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
-
-# donate:
-#   alipay: /images/donate/AliPayQR.png
-#   wechat: /images/donate/WeChatQR.png
-#   qqpay: /images/donate/QqPay.png
+  netease: {url: https://music.163.com/#/user/home?id=511730579, fa: fa-music, color: 25c6fe}
+  # qq: {url: https://wpa.qq.com/msgrd?v=3&uin=1248001691&site=qq&menu=yes, fa: fa-qq, color: 25c6fe}
   
 # 视频地址为https://cdn.jsdelivr.net/gh/honjun/hojun@1.2/Unbroken.mp4，配置如下
 # movies:
@@ -99,7 +79,7 @@ aplayer:
   server: netease
   type: playlist
   fixed: true
-  autoplay: false
+  autoplay: true
   loop: all
   order: random
   preload: auto
@@ -125,17 +105,15 @@ post_description:
 
 #评分
 widgetpack:
-  enable: true #false
-  id: 23889 #<app_id>
+  enable: false
+  id: 23889
   color:  fc6423
 
 # busuanzi(http://busuanzi.ibruce.info/) website statistics
-# 不蒜子(http://busuanzi.ibruce.info/) 网站统计
 busuanziStatistics:
   enable: true
   totalTraffic: true # 总访问量
   totalNumberOfvisitors: false # 总人次
 
 # 是否开启字数统计 (可以在post设置no_word_count: true)
-#不需要使用，直接设置值为false，或注释掉
 word_count: true
