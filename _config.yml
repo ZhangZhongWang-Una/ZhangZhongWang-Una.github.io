@@ -8,8 +8,7 @@ language: zh-cn
 timezone:
 
 # URL
-## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://pensionbase.cn
+url: https://pensionbase.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -59,9 +58,6 @@ category_map:
 tag_map:
 
 # Date / Time format
-## Hexo uses Moment.js to parse and display date
-## You can customize the date format as defined in
-## http://momentjs.com/docs/#/displaying/format/
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 
@@ -92,15 +88,3 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
-
-# douban
-douban:
-  user: 231694379
-  builtin: false
-  movie:
-    title: '生成页面的标题'
-    quote: '生成页面的内容的导语'
-    length: 2
-    valine_id:  C1HIie3isYzLvrWHW1k1CfTE-gzGzoHsz
-    valine_key: PSLCzYDGfVJXcXfsLiUARac0
-  timeout: 10000

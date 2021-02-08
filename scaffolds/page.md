@@ -5,5 +5,5 @@ keywords:
 description: 
 comments: false
 photos:
-type: 
+layout: 
 ---

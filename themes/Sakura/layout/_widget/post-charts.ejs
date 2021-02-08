@@ -27,17 +27,16 @@
     </div>
 </div>
 
-<script type="text/javascript" src="/js/echarts.min.js"></script>
+<!-- <script type="text/javascript" src="/js/echarts.min.js"></script> -->
+<script crossorigin="anonymous" integrity="sha512-t9GZbGKCH5MuYUFsq5AdrhllT0kdnc2fNMizKDgLXBBXgHP2dXxjRPOzYJauAXW9OXLlSYELUqWD30k7cb0Mkg==" src="https://lib.baomitu.com/echarts/5.0.2/echarts.min.js"></script>
 <script>
     let postsChart = echarts.init(document.getElementById('posts-chart'));
     let categoriesChart = echarts.init(document.getElementById('categories-chart'));
     let tagsChart = echarts.init(document.getElementById('tags-chart'));
-
     <%
     /* calculate postsOption data. */
     var startDate = moment().subtract(1, 'years').startOf('month');
     var endDate = moment().endOf('month');
-
     var monthMap = new Map();
     var dayTime = 3600 * 24 * 1000;
     for (var time = startDate; time <= endDate; time += dayTime) {
@@ -46,7 +45,6 @@
             monthMap.set(month, 0);
         }
     }
-
     // post and count map.
     site.posts.forEach(function (post) {
         var month = post.date.format('YYYY-MM');
@@ -54,11 +52,9 @@
             monthMap.set(month, monthMap.get(month) + 1);
         }
     });
-
     // xAxis data and yAxis data.
     var monthArr = JSON.stringify([...monthMap.keys()]);
     var monthValueArr = JSON.stringify([...monthMap.values()]); %>
-
     let postsOption = {
         title: {
             text: '文章发布统计图',
@@ -108,7 +104,6 @@
             }
         }]
     };
-
     <%
     /* calculate categoriesOption data. */
     var categoryArr = [];
@@ -118,9 +113,7 @@
             'value': category.length
         })
     });
-
     var categoryArrJson = JSON.stringify(categoryArr); %>
-
     let categoriesOption = {
         title: {
             text: '文章分类统计图',
@@ -148,7 +141,6 @@
             }
         }]
     };
-
     <%
     /* calculate tagsOption data. */
     // get all tags name and count,then order by length desc.
@@ -162,7 +154,6 @@
     tagArr.sort((a, b) => {
         return b.value - a.value
     });
-
     // get Top 10 tags name and count.
     var tagNameArr = [];
     var tagCountArr = [];
@@ -170,10 +161,8 @@
         tagNameArr.push(tagArr[i].name);
         tagCountArr.push(tagArr[i].value);
     }
-
     var tagNameArrJson = JSON.stringify(tagNameArr);
     var tagCountArrJson = JSON.stringify(tagCountArr); %>
-
     let tagsOption = {
         title: {
             text: 'Top10标签统计图 ',
@@ -220,7 +209,6 @@
             }
         }]
     };
-
     // render the charts
     postsChart.setOption(postsOption);
     categoriesChart.setOption(categoriesOption);

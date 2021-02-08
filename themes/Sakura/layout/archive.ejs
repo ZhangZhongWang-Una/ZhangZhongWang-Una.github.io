@@ -4,53 +4,62 @@
 </div>
 <div class="pattern-center ">
     <div class="pattern-attachment-img">
-        <img src="<%= theme.lazyloadImg %>" data-src="https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020507.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+        <img src="<%= theme.lazyloadImg %>"
+            data-src="https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020507.jpg" class="lazyload"
+            onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
     </div>
     <header class="pattern-header ">
         <h1 class="entry-title">
             归档</h1>
-            <span class="cat-des">
-                <p >想把世界最好的给你，却发现世上最好的是你
-                </p>
-            </span>
+        <span class="cat-des">
+            <p>想把世界最好的给你，却发现世上最好的是你
+            </p>
+        </span>
     </header>
 </div>
 <div id="content" class="site-content">
     <div id="main">
-
         <div id="main-part">
+             <!-- <div id="contentss">
+                <%- partial('_widget/post-charts') %>
+            </div> -->
             <div id="sitetimeline">
                 <div class="article-sort-title">
                     文章总览
                 </div>
                 <div class="article-sort">
                     <% var lastYear; var lastMonth; %>
-                        <% site.posts.sort('date', theme.homePageSortType).each(function(post, i){ %>
-                            <% var currentYear = parseInt(date(post.date, 'YYYY')); %>
-                                <% var currentMonth = parseInt(date(post.date, 'YYYYMM')); %>
-                                    <% if (lastYear != currentYear){ %>
-                                        <% lastYear = currentYear; %>
-                                            <div class="article-sort-item year">
-                                                <%= date(post.date, 'YYYY') %>年</div>
-                                            <% } %>
-                                                <div class="article-sort-item">
-                                                    <a class="article-sort-item-img" href="<%- url_for(post.path) %>" title="<%= post.title %>" data-pjax-state="<%= theme.pjax %>">
-                                                        <img data-lazy-src="<%- theme.lazyloadImg %>" alt="<%= post.title %>" onerror="this.onerror=null,
-                                                        this.src=&quot;/img/custom/404.png&quot;" data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>"></a>
-                                                    <div class="article-sort-item-info">
-                                                        <div class="article-sort-item-time">
-                                                            <i class="fa fa-calendar" aria-hidden="true"></i>
-                                                            <time class="post-meta-date-created" datetime="<%= date(post.date, 'YYYY-MM-DD HH:MM') %>" title="发表于 <%= date(post.date, 'YYYY-MM-DD HH:MM') %>">
-                                                                <%= date(post.date, 'YYYY-MM-DD HH:MM') %>
-                                                            </time>
-                                                        </div>
-                                                        <a class="article-sort-item-title" href="<%- url_for(post.path) %>" title="<%= post.title %>" data-pjax-state="<%= theme.pjax %>">
-                                                            <%= post.title %>
-                                                        </a>
-                                                    </div>
-                                                </div>
+                    <% site.posts.sort('date', theme.homePageSortType).each(function(post, i){ %>
+                    <% var currentYear = parseInt(date(post.date, 'YYYY')); %>
+                    <% var currentMonth = parseInt(date(post.date, 'YYYYMM')); %>
+                    <% if (lastYear != currentYear){ %>
+                    <% lastYear = currentYear; %>
+                    <div class="article-sort-item year">
+                        <%= date(post.date, 'YYYY') %>年</div>
+                    <% } %>
+                    <div class="article-sort-item">
+                        <a class="article-sort-item-img" href="<%- url_for(post.path) %>" title="<%= post.title %>"
+                            data-pjax-state="<%= theme.pjax %>">
+                            <img data-lazy-src="<%- theme.lazyloadImg %>" alt="<%= post.title %>" onerror="this.onerror=null,
+                                                        this.src=&quot;/img/custom/404.png&quot;"
+                                data-ll-status="loaded" class="entered loaded" src="<%= post.photos[0] %>"></a>
+                        <div class="article-sort-item-info">
+                            <div class="article-sort-item-time">
+                                <i class="fa fa-calendar" aria-hidden="true"></i>
+                                <time class="post-meta-date-created"
+                                    datetime="<%= date(post.date, 'YYYY-MM-DD HH:MM') %>"
+                                    title="发表于 <%= date(post.date, 'YYYY-MM-DD HH:MM') %>">
+                                    <%= date(post.date, 'YYYY-MM-DD HH:MM') %>
+                                </time>
+                            </div>
+                            <a class="article-sort-item-title" href="<%- url_for(post.path) %>"
+                                title="<%= post.title %>" data-pjax-state="<%= theme.pjax %>">
+                                <%= post.title %>
+                            </a>
+                        </div>
+                    </div>
 
-                                                <% }) %>
+                    <% }) %>
 
                 </div>
             </div>
