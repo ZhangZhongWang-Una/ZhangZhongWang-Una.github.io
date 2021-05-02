@@ -10,7 +10,7 @@ timezone:
 # URL
 url: https://pensionbase.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: post/:abbrlink.html
 permalink_defaults:
 
 # Directory
@@ -88,3 +88,8 @@ githubEmojis:
   inject: true
   styles:
   customEmojis:
+
+## 启用算法生成不重复文件编号
+abbrlink:
+  alg: crc16   #算法： crc16(default) and crc32
+  rep: hex   #进制： dec(default) and hex: dec #输出进制：十进制和十六进制，默认为10进制。丨dec为十进制，hex为十六进制

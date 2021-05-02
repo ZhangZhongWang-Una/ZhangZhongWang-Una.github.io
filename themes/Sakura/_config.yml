@@ -17,10 +17,11 @@ menus:
   首页: { path: /, fa: fa-fort-awesome faa-shake }
   归档: { path: /archives, fa: fa-archive faa-shake }
   生活: { path: javascript:;, fa: fa-file-text-o faa-shake, submenus: {
+    相册: {path: /photos, fa: fa-photo faa-shake},
     电影: {path: /movie, fa: fa-film faa-shake},
     追剧: {path: /, fa: fa-television faa-shake}
   }}
-  相册: {path: /photos, fa: fa-photo faa-shake}
+  表白: {path: /confession, fa: fa-heart faa-shake}
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
   100件事: {path: /100-things, fa: fa-envelope-o faa-shake}
   爱情长跑线: {path: /timeline, fa: fa-link faa-shake}
@@ -81,7 +82,7 @@ aplayer:
   fixed: true
   autoplay: true
   loop: all
-  order: random
+  order: list
   preload: auto
   volume: 0.7
   mutex: true
@@ -117,3 +118,11 @@ busuanziStatistics:
 
 # 是否开启字数统计 (可以在post设置no_word_count: true)
 word_count: true
+
+# 文章加密
+encrypt:
+  enable: true
+  abstract: 这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。
+  message: 请输入文章作者真名缩写查看此文章
+  wrong_pass_message: 密码错误，是真名小写缩写，例如zzw!
+
