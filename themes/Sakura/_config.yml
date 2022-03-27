@@ -42,7 +42,7 @@ bgclass:
 
 # startdash url, title, desc img
 startdash: 
-  - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
+  - {url: /video, title: 视频, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
   - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
   - {url: /, title: 待完成, desc: 未完待续, img: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020701.jpg}
 
@@ -80,7 +80,7 @@ aplayer:
   server: netease
   type: playlist
   fixed: true
-  autoplay: true
+  autoplay: false
   loop: all
   order: list
   preload: auto

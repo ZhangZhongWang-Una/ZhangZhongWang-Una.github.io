@@ -1,0 +1,69 @@
+
+ <link rel="stylesheet" href="/css/bangumi.css">
+ <div class="pattern-center-blank">
+ </div>
+ <div class="pattern-center ">
+     <div class="pattern-attachment-img">
+         <img src="<%= theme.lazyloadImg %>" data-src="<%= page.photos%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+     </div>
+     <header class="pattern-header ">
+         <h1 class="entry-title">
+             视频
+         </h1>
+         <span class="cat-des">
+         <p><%= page.description%></p>
+         </span>
+     </header>
+ </div>
+ <div id="content" class="site-content">
+   <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
+     <% if (page.bangumis) { %>
+     <div class="bangumi">
+       <div class="row" id="rootRow">
+         <% (page.bangumis||[]).forEach(function (bangumi, index) { %>
+           <div class="col s12 m6" id="bangumi-<%- index %>">
+             <div class="card hoverable" style="overflow: visible;">
+                <!-- 图片 -->
+               <div class="card-image waves-effect waves-block waves-light">
+                <video src="<%- bangumi.img %>" 
+                controls="controls"  preload="none"
+                style="max-width: 80%; display: block; margin-left: auto; margin-right: auto;">
+                    your browser does not support the video tag
+                    </video>
+                 <!-- <div class="activator itempic lazyload" style="background-image: url(<%- bangumi.img %>);" data-src="<%- bangumi.img %>">
+                 </div> -->
+               </div>
+               
+               <!-- <div class="card-content" style="text-align:center;">
+                 <div class="card-title should-ellipsis activator grey-text text-darken-4">
+                   <%- bangumi.title %><i class="fa fa-commenting-o right"></i>
+                 </div>
+                 <p class="should-ellipsis-full">
+                 <%- bangumi.jp %></p>
+                 <ul class="skill-list">
+                   <li class="skill">
+                     <div>
+                     <%- bangumi.status %></div>
+                     <progress class="skill-1" max="100" value="<%- bangumi.progress %>">
+                     </progress>
+                   </li>
+                 </ul>
+               </div> -->
+
+               <!-- 点击后显示的内容 -->
+               <!-- <div class="card-reveal" style="display: none; transform: translateY(0%);">
+                <video src="https://una-love.oss-cn-beijing.aliyuncs.com/video/%E7%A7%98%E4%B9%A6%E5%A4%84.mp4" 
+                controls="controls"  preload="none"
+                style="max-width: 100%; display: block; margin-left: auto; margin-right: auto;">
+                    your browser does not support the video tag
+                    </video>
+               </div> -->
+
+             </div>
+           </div>
+         <% }) %>
+       </div>
+     </div>
+     <% } %>
+   </article>
+ </div>
