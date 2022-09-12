@@ -1,0 +1,24 @@
+# deploy
+#!/bin/sh
+hexo clean
+hexo generate
+hexo deploy
+
+# server
+#!/bin/sh
+hexo clean
+hexo generate
+hexo server
+
+# git push
+#!/bin/sh
+git add .
+git commit -m "增加电影页面"
+git push origin hexogit
+
+# 替换
+https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/
+to
+https://una-love.oss-cn-beijing.aliyuncs.com/cdn/honjun/
+to
+https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una/

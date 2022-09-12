@@ -30,7 +30,8 @@ photos: https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/about.jpg
     <bot-ui></botui>
   </div>
 </div>
-<script src="/js/botui.js"></script>
+<script type="text/javascript" src="https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una/js/botui.js"></script>
+<!-- <script src="/js/botui.js"></script> -->
 <script>
 bot_ui_ini()
 </script>

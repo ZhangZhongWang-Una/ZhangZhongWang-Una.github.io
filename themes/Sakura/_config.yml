@@ -4,7 +4,8 @@ favicon: /img/custom/favicon.ico
 avatar: /img/custom/avatar.jpg
 url: https://pensionbase.cn/
 description: 记录爱情&记录生活
-cdn: https://cdn.jsdelivr.net/gh/ZhangZhongWang-Una/CDN@1.0
+# cdn: https://cdn.jsdelivr.net/gh/ZhangZhongWang-Una/CDN@1.0
+cdn: https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una
 pjax: 1
 # 1开启
 mathjax: 0
@@ -19,7 +20,7 @@ menus:
   生活: { path: javascript:;, fa: fa-file-text-o faa-shake, submenus: {
     相册: {path: /photos, fa: fa-photo faa-shake},
     电影: {path: /movie, fa: fa-film faa-shake},
-    追剧: {path: /, fa: fa-television faa-shake}
+    视频: {path: /video, fa: fa-television faa-shake}
   }}
   表白: {path: /confession, fa: fa-heart faa-shake}
   留言板: { path: /comment/, fa: fa-pencil-square-o faa-tada }
@@ -50,6 +51,7 @@ startdash:
 
 # your site build time or founded date
 inLoveTime: 11/11/2016 00:00:00
+outLoveTime: 3/22/2022 00:00:00
 
 #social  url, img PC端配置
 social:
@@ -92,7 +94,7 @@ valine:
   enable: true
   appId: C1HIie3isYzLvrWHW1k1CfTE-gzGzoHsz
   appKey: PSLCzYDGfVJXcXfsLiUARac0
-  notify: false #评论mail回复提醒
+  notify: true #评论mail回复提醒
   verify: false #验证码
   visitor: false #统计阅读量
   avatar: robohash # Gravatar style : mp/identicon/monsterid/wavatar/retro/hide
@@ -112,16 +114,16 @@ widgetpack:
 
 # busuanzi(https://busuanzi.ibruce.info/) website statistics
 busuanziStatistics:
-  enable: true
-  totalTraffic: true # 总访问量
+  enable: false
+  totalTraffic: false # 总访问量
   totalNumberOfvisitors: false # 总人次
 
 # 是否开启字数统计 (可以在post设置no_word_count: true)
-word_count: true
+word_count: false
 
 # 文章加密
 encrypt:
-  enable: true
+  enable: false
   abstract: 这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。
   message: 请输入文章作者真名缩写查看此文章
   wrong_pass_message: 密码错误，是真名小写缩写，例如zzw!

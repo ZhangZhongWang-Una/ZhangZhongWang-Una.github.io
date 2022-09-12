@@ -70,6 +70,7 @@ photos: https://una-love.oss-cn-beijing.aliyuncs.com/figured/2021020603.jpg
         <a class="tagc3">快乐万岁</a>
     </div>
 </div>
-<script src="/js/scrolltag.js"></script>
+<script type="text/javascript" src="https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una/js/scrolltag.js"></script>
+<!-- <script src="/js/scrolltag.js"></script> -->
 
 {% endraw %}

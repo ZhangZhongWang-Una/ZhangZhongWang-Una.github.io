@@ -13,10 +13,10 @@
                     <i class="fa fa-clock-o" aria-hidden="true"></i>
                     <span id="time" align="center">载入时间中...</span>
                     <script>
-                        var now = new Date();
+                        var now = new Date("<%- theme.outLoveTime %>");
                         function createtime() {
                             var grt = new Date("<%- theme.inLoveTime %>");
-                            now.setTime(now.getTime() + 250);
+                            // now.setTime(now.getTime() + 250);
                             days = (now - grt) / 1000 / 60 / 60 / 24;
                             dnum = Math.floor(days);
                             hours = (now - grt) / 1000 / 60 / 60 - (24 * dnum);
@@ -36,10 +36,13 @@
         </div>
         <div class="footer-device">
             <p style="font-family: 'Ubuntu', sans-serif;">
+                <!-- 全网站字数统计wordcount -->
+                <% if (theme.word_count) { %>
                 <span style="color: #b9b9b9;padding-left: 20px;">
-                    <!-- 全网站字数统计wordcount -->
                     <i class="fa fa-line-chart" aria-hidden="true" style="color: #ff9999;display:inline-block"></i>
-                    博客全站共: <span class="post-count" style="color:#ff9999;"><%= totalcount(site) %></span>字</span>
+                    博客全站共: <span class="post-count" style="color:#ff9999;"><%= totalcount(site) %></span>字
+                </span>
+                <% } %>
                 <!-- 不蒜子网页计数器 -->
                 <% if (theme.busuanziStatistics && theme.busuanziStatistics.totalTraffic) { %>
                 <span style="padding-left: 20px;"><i class="fa fa-fire" aria-hidden="true"
@@ -56,35 +59,45 @@
                 </span>
             </p>
         </div>
-        <!-- 作者注明 -->
+
         <div class="footer-device">
             <p style="font-family: 'Ubuntu', sans-serif;">
+                <!-- 作者注明 -->
                 <span style="color: #b9b9b9;">
-                    Copyright &copy <%= date(new Date(), 'YYYY') %>&nbsp;|&nbsp;
-                    <a style="color: #ffc0cb;display:inline-block"> <%= config.author || config.title %> </a>
+                    Copyright &copy 2021 - <%= date(new Date(), 'YYYY') %>
+                    &nbsp;|&nbsp;
+                    <a style="color: #ffc0cb;display:inline-block"> <%= config.author %> </a>
                     <i class="iconfont icon-sakura rotating" style="color: #ffc0cb;display:inline-block"></i>
-                    &nbsp;|&nbsp;Powered by <span style="color: #ffc0cb;"> Hexo</span> &nbsp;|&nbsp; Theme <span
-                        style="color: #ffc0cb;"> Sakura</span>
+                    &nbsp;|&nbsp; 
+                    <a style="color: #ffc0cb;display:inline-block"> 只属于你 </a>
+                    &nbsp;|&nbsp;
+                    Powered by <span style="color: #ffc0cb;"> Hexo</span> 
+                    &nbsp;|&nbsp; 
+                    Theme <span style="color: #ffc0cb;"> Sakura</span>
                 </span>
             </p>
         </div>
     </div>
 </footer>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script> -->
-<!-- <script type="text/javascript" src="/js/instantclick-1.2.2.js"></script> -->
-<!-- 星星跟随坠落 -->
-<!-- <script src="https://cdn.jsdelivr.net/gh/cungudafa/cdn@2.1.2/js/cursor.js"></script> -->
-<!-- 🌸飘落 -->
-<script src="https://cdn.jsdelivr.net/gh/wallleap/cdn@latest/js/sakura.js"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/sakura.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/lib.min.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/clipboard.min.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/InsightSearch.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/jquery.fancybox.min.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/sakura-app.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/av.min.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/Valine.min.js'%>"></script>
+<script type="text/javascript" src="<%= (theme.cdn || '') + '/js/botui.js'%>"></script>
+<!-- <script type="text/javascript" src="/js/sakura.js"></script>
 <script type="text/javascript" src="/js/lib.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+<script type="text/javascript" src="/js/clipboard.min.js"></script>
 <script type="text/javascript" src="/js/InsightSearch.js"></script>
 <script type="text/javascript" src="/js/jquery.fancybox.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
-<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
-<script src="/js/botui.js"></script>
-<script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script type="text/javascript" src="/js/av.min.js"></script>
+<script type="text/javascript" src='/js/Valine.min.js'></script>
+<script type="text/javascript" src="/js/botui.js"></script>
+<script type="text/javascript" src="/js/busuanzi.pure.min.js"></script> -->
 <script type="text/javascript">
     /* <![CDATA[ */
     if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
