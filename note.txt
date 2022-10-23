@@ -14,7 +14,7 @@ hexo server
 #!/bin/sh
 git add .
 git commit -m "增加电影页面"
-git push origin hexogit
+git push origin hexo
 
 # 替换
 https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/
@@ -28,3 +28,10 @@ https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una/
 config.language
 theme.video_1
 page.
+
+# git
+hexo分支是源码
+master是页面
+
+#文章加密
+npm install hexo-blog-encrypt
