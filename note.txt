@@ -22,3 +22,9 @@ to
 https://una-love.oss-cn-beijing.aliyuncs.com/cdn/honjun/
 to
 https://una-love.oss-cn-beijing.aliyuncs.com/cdn/una/
+
+# 知识点
+'<%- theme.video_1.autoplay %>'
+config.language
+theme.video_1
+page.
